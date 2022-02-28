@@ -19,14 +19,14 @@ class MathsTest
 	}
 	
 	@BeforeAll
-	static void init()
+	public static void init()
 	{
 		System.out.println("in init");
 		m1=new Maths();
 	}
 
 	@Test
-	void test() {
+	public void test() {
 		
 		int answer=m1.add(10,3);
 		int expected=13;
@@ -35,7 +35,7 @@ class MathsTest
 	}
 	
 	@Test
-	void m2()
+	public void m2()
 	{
 		
 		//int ans=m1.div(10, 2);
@@ -45,7 +45,7 @@ class MathsTest
 	}
 	
 	@Test
-	void m3()
+	public void m3()
 	{
 		
 		assertTrue(m1.isOdd(97));

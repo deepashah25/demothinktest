@@ -11,12 +11,12 @@ import org.mockito.MockitoAnnotations;
 public class OrderTest {
 
 @Mock
-private PaymentGateway paygateway;
+public PaymentGateway paygateway;
 
 
 
 @Test
-void m1()
+public void m1()
 {
 	//paygateway=Mockito.mock(PaymentGateway.class);
 	MockitoAnnotations.initMocks(this);
